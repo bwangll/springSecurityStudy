@@ -1,7 +1,7 @@
-POST http://localhost:8080/rest
+POST http://localhost:8080/login
 Content-Type: application/json
 
 {
-  "username": "admin",
-  "password": "111111"
+  "username": "张san",
+  "password": "123456"
 }

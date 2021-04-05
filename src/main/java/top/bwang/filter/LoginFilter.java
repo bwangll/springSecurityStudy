@@ -21,6 +21,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
  * 自定义登录过滤器，原始为key/value结构，改为接受json格式
  */
 public class LoginFilter extends UsernamePasswordAuthenticationFilter {
+
+
+
     @Override
     public Authentication attemptAuthentication(HttpServletRequest request, HttpServletResponse response) throws AuthenticationException {
         if (!request.getMethod().equals("POST")) {
